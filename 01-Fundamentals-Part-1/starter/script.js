@@ -196,26 +196,45 @@
 //SWITCH STATEMENTS
 // Compare one value to a variety of other ones (way more efficient than writing complicated if-else statements)
 // let's take the week/weekend example tolearn this
-const day = 'Wednesday';
-switch (day) {
-    case 'Monday':
-        console.log(`Plan week ahead..market opens`);
-        break; //break out of the switch statement
-    case 'Tuesday':
-        console.log('Wake up early and workout!!');
-        break;
-    case 'Wednesday':
-    case 'Thursday':
-        console.log('This trigger is for both wednesday and thursday');
-        break;
-    case 'Friday':
-        console.log('Hang out with friends!!');
-        break;
-    case 'Saturday':
-    case 'Sunday':
-        console.log('Same thing for Saturday and Sunday!!');
-        break;
-    default:
-        console.log('Not a day');
-    // Remember the switch statement does STRICT EQUALITY COMPARISON (===)
-}   // You can do the same thing with if/else but it's so long and inefficient
+// const day = prompt(`Enter the day`);//'Wednesday';
+// switch (day) {
+//     case 'Monday':
+//         console.log(`Plan week ahead..market opens`);
+//         break; //break out of the switch statement
+//     case 'Tuesday':
+//         console.log('Wake up early and workout!!');
+//         break;
+//     case 'Wednesday':
+//     case 'Thursday':
+//         console.log('This trigger is for both wednesday and thursday');
+//         break;
+//     case 'Friday':
+//         console.log('Hang out with friends!!');
+//         break;
+//     case 'Saturday':
+//     case 'Sunday':
+//         console.log('Same thing for Saturday and Sunday!!');
+//         break;
+//     default:
+//         console.log('Not a day');
+//     // Remember the switch statement does STRICT EQUALITY COMPARISON (===)
+// }   // You can do the same thing with if/else but it's so long and inefficient
+
+
+// TERNARY OPERATION - CONDITIONAL
+// const carsspeed = 47;
+// carsspeed > 25 ? console.log(`You were speeding at ${carsspeed} mph.`) : console.log(`You were below the speed limit! No ticket.`);
+
+// const age = 14;
+// const drink = age >= 18 ? 'Alcohol allowed 🍺' : 'Underage!! Alcohol not allowed 😬';
+// console.log(drink);
+
+// //You can also insert the ternary operator into a template literal
+// console.log(`Based on my age, the status is ${age >= 18 ? 'Alcohol allowed 🍺' : 'Underage!! Alcohol not allowed 😬'}`);
+
+//CODING CHALLENGE 4
+const bill = 430;
+const tip = (bill >= 50) && (bill <= 300) ? bill * 0.15 : bill * 0.20;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value is ${bill + tip} `);
+
+//
